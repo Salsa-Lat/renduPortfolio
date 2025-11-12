@@ -46,17 +46,14 @@ ul li a {
 }
 
 /* hero title */
-.padding-hero {
-  padding: 75px 0 125px 0;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.space {
+.space-hero {
+  padding: 75px 0 125px 0;
   justify-content: space-between;
 }
 
