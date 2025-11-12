@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* header */
+header {
+  background-color: rgb(23, 23, 23);
+  color: rgb(236, 232, 232);
+}
+
+/* nav bar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.centertopbottom {
+  width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(236, 232, 232);
+  text-decoration: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul li a {
+  color: rgb(236, 232, 232);
+  padding: 10px;
+  text-decoration-thickness: 0;
+  text-decoration-color: rgba(236, 232, 232, 0.317);
+}
+
+/* hero title */
+.padding-hero {
+  padding: 75px 0 125px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space {
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+
+.p-title {
+  font-weight: 500;
+  font-size: large;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 55px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.desc {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* boutton */
+.btn {
+  padding: 20px 50px;
+  background-color: rgb(236, 232, 232);
+  width: fit-content;
+  color: rgb(23, 23, 23);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 30px;
+  transition: all ease 300ms;
+  border: 1px solid rgb(236, 232, 232);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: rgb(236, 232, 232);
+}
+
+/* section services */
+.center {
+  width: 900px;
+  margin: auto;
+  padding: 75px 0;
+}
+
+.center h2 {
+  text-align: center;
+  padding: 25px 0;
+  font-weight: 600;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.projet-center {
+  text-align: center;
+  margin-top: 50px;
+  padding: 25px;
+}  
+
+.projet-center h3 {
+  font-size: 25px;
+}
+
+.projet {
+  width: 100px;
+  text-align: center;
+}
+
+.container-padding {
+  gap: 80px;
+}
+
+/* section sponsor */
+#sponsor {
+  background-color: rgb(23, 23, 23);
+}
+
+.sponsor-space {
+  gap: 125px;
+}
