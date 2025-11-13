@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,7 @@ header nav {
 }
 
 .centertopbottom {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
 
@@ -50,6 +51,7 @@ ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .space-hero {
@@ -91,9 +93,12 @@ h1 {
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
-  margin-top: 30px;
   transition: all ease 300ms;
   border: 1px solid rgb(236, 232, 232);
+}
+
+.btn-space {
+  margin-top: 30px;
 }
 
 .btn:hover {
@@ -103,29 +108,26 @@ h1 {
 
 /* section services */
 .center {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   padding: 75px 0;
 }
 
-.center h2 {
+h2 {
   text-align: center;
   padding: 25px 0;
   font-weight: 600;
 }
 
-.card {
-  width: 300px;
+.card-projet {
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   gap: 25px;
-}
-
-.projet-center {
   text-align: center;
   margin-top: 50px;
   padding: 25px;
-}  
+}
 
 .projet-center h3 {
   font-size: 25px;
@@ -137,7 +139,7 @@ h1 {
 }
 
 .container-padding {
-  gap: 80px;
+  gap: 60px;
 }
 
 /* section sponsor */
@@ -147,4 +149,138 @@ h1 {
 
 .sponsor-space {
   gap: 125px;
+}
+
+/* section réalisation */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  max-width: 275px;
+  max-height: 428px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card img {
+  max-width: 275px;
+  max-height: 275px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* section temoignage */
+.gap {
+  gap: 20px;
+}
+
+.card-temoignage {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 215px;
+  max-height: 390px;
+  background-color: rgb(237, 237, 237);
+  padding: 25px;
+}
+
+.cat-pfp {
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50px;
+}
+
+.coms-align {
+  display: flex;
+  gap: 10px;
+}
+
+.card-temoignage p span {
+  font-weight: 500;
+}
+
+.stars img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.text-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* footer */
+#footer {
+  background-color: rgb(23, 23, 23);
+  color: rgb(236, 232, 232);
+  padding-bottom: 75px;
+}
+
+.footer-spacing {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-side {
+  width: 425px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+form button {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.footer-side p {
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+@media (max-width:768px) {
+  header, section {
+    padding: 0 10px;
+  }
+
+  #hero-title img {
+    display: none;
+  }
+
+  .wrap {
+    gap: 75px;
+  }
+
+  .footer-spacing {
+    gap: 50px;
+  }
 }
